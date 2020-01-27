@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<title>My ToDo list</title>
+<link href="http://allfont.ru/allfont.css?fonts=rodchenkoctt" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="HW5.js" async defer></script>
+<body>
+  <div class="wrapper">
+    <div class="add_task_block">
+      <h1>MyToDo list</h1>
+      <input type="text" id="new_task" placeholder="New task">
+      <input type="date" id="deadline">
+      <span id="add_button">Add task</span>
+    </div>
+    <div class="filters_block">
+      <select id="completed_filter">
+        <option>All tasks</option>
+        <option>Complited</option>
+        <option>Uncomplited</option>
+      </select>
+      <select id="date_filter">
+        <option>Any deadline</option>
+        <option>Tomorrow</option>
+        <option>Next week</option>
+      </select>
+    </div>
+    <div class="tasks_block">
+      <ul id="tasks_list"></ul>
+    </div>
+
+  </div>
+</body>
+</html>

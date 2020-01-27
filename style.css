@@ -1,0 +1,143 @@
+* {
+    font-family: 'RodchenkoCTT', arial;
+}
+
+.wrapper {
+  width: 920px;
+  margin: 0 auto}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.overdue {
+    background: #FA8072;
+}
+
+ul li.completed {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+    z-index: 10;
+}
+
+ul li.hidden {
+    display:none;
+}
+
+ul li.completed::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+  float: right;
+  margin: 0;
+
+    padding: 0px 16px 12px 16px;
+}
+
+.close:hover {
+    color: #f44336;
+}
+
+.time {
+  margin: 0px 40px;
+  float: right;
+  color: #555;
+}
+
+.add_task_block {
+    background-color: #F5FFFA;
+    padding: 30px 40px;
+    text-align: center;
+    border-bottom: 3px solid #DCDCDC;
+}
+
+.add_task_block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    border: none;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    background: #F5F5F5;
+    float: left;
+    font-size: 16px;
+}
+
+select {
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  background: #F5F5F5;
+  color: #555;
+  border-radius: 10px;
+  margin: 10px 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+#deadline {
+  border-radius: 0 10px 10px 0;
+  width: 15%;
+}
+
+label {
+  width: 100%;
+}
+
+#add_button {
+    padding: 10px;
+    width: 10%;
+    border-radius: 10px;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add_button:hover {
+    background-color: #bbb;
+}
